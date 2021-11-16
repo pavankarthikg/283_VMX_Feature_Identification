@@ -7,7 +7,7 @@ System 2, successful installation:
 As the VirtualBox, VMware Fusion, does not yet possess standard versions for the M1 chip model. I opted to find a Windows 10 device with Intel core i5 processor and to use VMWare Workstation 16.0. 
 
 Steps: 
-1. Download Ubuntu 21.10 and set it up with as much as RAM, Storage. I could assign only 3 GB Ram and 128 GB HDD memory. 
+1. Download Ubuntu 21.10 and set it up with as much as RAM, Storage. I could assign only 3 GB Ram and 128 GB HDD memory. Made sure to run CMD using admin privileges and enable nested virtualization. 
 
 2. As the linux source code is used in every module, I forked the source code from the provided link.
 https://github.com/torvalds/linux
