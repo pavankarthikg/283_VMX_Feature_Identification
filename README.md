@@ -20,12 +20,19 @@ https://github.com/torvalds/linux
  - Sudo apt-get install libssl-dev
 
 5. Resolving all these issues, checked the menuconfig and the relevant version match. 
-
-6. Resolve the License error with MODULE_LICENSE("GPL v2"); and then
-- make
 - make modules
 - sudo make install
 
-7. 
+6. Resolve the License error with MODULE_LICENSE("GPL v2"); 
+and then
+- make
 
-7.
+7. Loading the module inside the kernel
+- sudo insmod cmpe283-1.ko
+
+8. Check if kernel module is loaded properly
+- lsmod | grep cmpe283-1
+
+9. Finally, check for the execution and the print
+- dmesg
+
