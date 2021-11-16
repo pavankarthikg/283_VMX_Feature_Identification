@@ -36,3 +36,4 @@ and then
 9. Finally, check for the execution and the printed output with
 - dmesg
 
+10. Looking at the print statements from the program, inferred that everything went well.
