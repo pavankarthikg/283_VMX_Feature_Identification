@@ -6,6 +6,18 @@ Failed trials: As stated in the video, I went ahead with the combination of GCP,
 System 2, successful installation: 
 As the VirtualBox, VMware Fusion, does not yet possess standard versions for the M1 chip model. I opted to find a Windows 10 device with Intel core i5 processor and to use VMWare Workstation 16.0. 
 
-Ubuntu
+Steps: 
+1. Download Ubuntu 21.10 and set it up with as much as RAM, Storage. I could assign only 3 GB Ram and 128 GB HDD memory. 
 
-Ran into numerous errors for not having the required libraries: Bison, Flex, libssl-dev,, libelg-dev, etc, which are resolved using ‘sudo apt-get install XXXX’.
+2. As the linux source code is used in every module, I forked the source code from the provided link.
+https://github.com/torvalds/linux
+
+3. Then, moved the cmpe283-1.c , Makefile into the Linux source folder. Created a 283_File just to be on the safer side and not confuse.
+
+4. Building the kernel/make, ran into numerous errors for not having the required libraries: Bison, Flex, libssl-dev,, libelg-dev, etc, which are resolved using 
+ - sudo apt-get install python-pip python-dev libffi-dev libssl-dev libxml2-dev libxslt1-dev libjpeg8-dev zlib1g-dev
+ - 
+
+5. Resolving all these issues, checked the menuconfig and the relevant version match.
+
+6. 
