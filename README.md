@@ -16,8 +16,16 @@ https://github.com/torvalds/linux
 
 4. Building the kernel/make, ran into numerous errors for not having the required libraries: Bison, Flex, libssl-dev,, libelg-dev, etc, which are resolved using 
  - sudo apt-get install python-pip python-dev libffi-dev libssl-dev libxml2-dev libxslt1-dev libjpeg8-dev zlib1g-dev
- - 
+ - Sudo apt-get install libncurses-dev
+ - Sudo apt-get install libssl-dev
 
-5. Resolving all these issues, checked the menuconfig and the relevant version match.
+5. Resolving all these issues, checked the menuconfig and the relevant version match. 
 
-6. 
+6. Resolve the License error with MODULE_LICENSE("GPL v2"); and then
+- make
+- make modules
+- sudo make install
+
+7. 
+
+7.
