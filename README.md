@@ -33,6 +33,6 @@ and then
 8. Check if kernel module is loaded properly
 - lsmod | grep cmpe283-1
 
-9. Finally, check for the execution and the print
+9. Finally, check for the execution and the printed output with
 - dmesg
 
